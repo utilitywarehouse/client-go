@@ -19,12 +19,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pkg/errors"
 	"github.com/pingcap/kvproto/pkg/coprocessor"
 	"github.com/pingcap/kvproto/pkg/errorpb"
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pingcap/kvproto/pkg/tikvpb"
+	"github.com/pkg/errors"
 )
 
 // CmdType represents the concrete request type in Request or response type in Response.
@@ -145,7 +145,7 @@ type Request struct {
 	RawBatchDelete     *kvrpcpb.RawBatchDeleteRequest
 	RawDeleteRange     *kvrpcpb.RawDeleteRangeRequest
 	RawScan            *kvrpcpb.RawScanRequest
-	RawGetKeyTTL	   *kvrpcpb.RawGetKeyTTLRequest
+	RawGetKeyTTL       *kvrpcpb.RawGetKeyTTLRequest
 	UnsafeDestroyRange *kvrpcpb.UnsafeDestroyRangeRequest
 	Cop                *coprocessor.Request
 	MvccGetByKey       *kvrpcpb.MvccGetByKeyRequest

@@ -22,6 +22,7 @@ import (
 
 // BufferStore wraps a Retriever for read and a MemBuffer for buffered write.
 // Common usage pattern:
+//
 //	bs := NewBufferStore(r) // use BufferStore to wrap a Retriever
 //	// ...
 //	// read/write on bs

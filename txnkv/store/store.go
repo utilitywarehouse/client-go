@@ -22,6 +22,7 @@ import (
 
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
+	pd "github.com/tikv/pd/client"
 	"github.com/utilitywarehouse/tikv-client-go/config"
 	"github.com/utilitywarehouse/tikv-client-go/locate"
 	"github.com/utilitywarehouse/tikv-client-go/metrics"
@@ -30,7 +31,6 @@ import (
 	"github.com/utilitywarehouse/tikv-client-go/txnkv/latch"
 	"github.com/utilitywarehouse/tikv-client-go/txnkv/oracle"
 	"github.com/utilitywarehouse/tikv-client-go/txnkv/oracle/oracles"
-	pd "github.com/tikv/pd/client"
 )
 
 // TiKVStore contains methods to interact with a TiKV cluster.
@@ -209,7 +209,8 @@ func (s *TiKVStore) runSafePointChecker() {
 }
 
 // CheckVisibility checks if it is safe to read using startTS (the startTS should
-//  be greater than current GC safepoint).
+//
+//	be greater than current GC safepoint).
 func (s *TiKVStore) CheckVisibility(startTS uint64) error {
 	s.spMutex.RLock()
 	cachedSafePoint := s.safePoint

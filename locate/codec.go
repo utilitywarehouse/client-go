@@ -16,8 +16,8 @@ package locate
 import (
 	"context"
 
-	"github.com/utilitywarehouse/tikv-client-go/codec"
 	pd "github.com/tikv/pd/client"
+	"github.com/utilitywarehouse/tikv-client-go/codec"
 )
 
 // CodecPDClient wraps a PD Client to decode the encoded keys in region meta.

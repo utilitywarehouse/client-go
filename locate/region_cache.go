@@ -25,11 +25,11 @@ import (
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
+	pd "github.com/tikv/pd/client"
 	"github.com/utilitywarehouse/tikv-client-go/codec"
 	"github.com/utilitywarehouse/tikv-client-go/config"
 	"github.com/utilitywarehouse/tikv-client-go/metrics"
 	"github.com/utilitywarehouse/tikv-client-go/retry"
-	pd "github.com/tikv/pd/client"
 )
 
 // CachedRegion encapsulates {Region, TTL}

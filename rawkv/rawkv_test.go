@@ -97,7 +97,7 @@ func (s *testRawKVSuite) mustPut(c *C, key, value []byte) {
 }
 
 func (s *testRawKVSuite) mustPutTTL(c *C, key, value []byte, ttl uint64) {
-	err := s.client.Put(context.TODO(), key, value, PutOption{ TTL: ttl })
+	err := s.client.Put(context.TODO(), key, value, PutOption{TTL: ttl})
 	c.Assert(err, IsNil)
 }
 
@@ -232,7 +232,7 @@ func (s *testRawKVSuite) TestSimple(c *C) {
 }
 
 func (s *testRawKVSuite) TestTTL(c *C) {
-	s.mustNotExist(c, []byte("key"))	
+	s.mustNotExist(c, []byte("key"))
 	s.mustPutTTL(c, []byte("key"), []byte("value"), 100)
 	s.mustGetKeyTTL(c, []byte("key"), 100)
 }
