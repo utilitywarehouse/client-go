@@ -259,7 +259,7 @@ func (txn *Transaction) Commit(ctx context.Context) error {
 	if err == nil {
 		lock.SetCommitTS(committer.GetCommitTS())
 	}
-	log.Debug("[kv]", txn.startTS, " txnLatches enabled while txn retryable:", err)
+	log.Log("[kv]", txn.startTS, " txnLatches enabled while txn retryable:", err)
 	return err
 }
 
@@ -274,7 +274,7 @@ func (txn *Transaction) Rollback() error {
 		metrics.TxnHistogram.Observe(time.Since(txn.startTime).Seconds())
 	}()
 	txn.close()
-	log.Debugf("[kv] Rollback txn %d", txn.startTS)
+	log.Log(fmt.Sprintf("[kv] Rollback txn %d", txn.startTS))
 
 	return nil
 }
