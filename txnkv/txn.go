@@ -21,10 +21,10 @@ import (
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/promlog"
-	"github.com/tikv/client-go/key"
-	"github.com/tikv/client-go/metrics"
-	"github.com/tikv/client-go/txnkv/kv"
-	"github.com/tikv/client-go/txnkv/store"
+	"github.com/utilitywarehouse/tikv-client-go/key"
+	"github.com/utilitywarehouse/tikv-client-go/metrics"
+	"github.com/utilitywarehouse/tikv-client-go/txnkv/kv"
+	"github.com/utilitywarehouse/tikv-client-go/txnkv/store"
 )
 
 var (

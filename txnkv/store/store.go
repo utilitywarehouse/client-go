@@ -22,14 +22,14 @@ import (
 
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/locate"
-	"github.com/tikv/client-go/metrics"
-	"github.com/tikv/client-go/retry"
-	"github.com/tikv/client-go/rpc"
-	"github.com/tikv/client-go/txnkv/latch"
-	"github.com/tikv/client-go/txnkv/oracle"
-	"github.com/tikv/client-go/txnkv/oracle/oracles"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/locate"
+	"github.com/utilitywarehouse/tikv-client-go/metrics"
+	"github.com/utilitywarehouse/tikv-client-go/retry"
+	"github.com/utilitywarehouse/tikv-client-go/rpc"
+	"github.com/utilitywarehouse/tikv-client-go/txnkv/latch"
+	"github.com/utilitywarehouse/tikv-client-go/txnkv/oracle"
+	"github.com/utilitywarehouse/tikv-client-go/txnkv/oracle/oracles"
 	pd "github.com/tikv/pd/client"
 )
 

@@ -16,8 +16,8 @@ package kv
 import (
 	"context"
 
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/key"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/key"
 )
 
 // UnionStore is a store that wraps a snapshot for read and a BufferStore for buffered write.

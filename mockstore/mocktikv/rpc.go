@@ -25,7 +25,7 @@ import (
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pkg/errors"
-	"github.com/tikv/client-go/rpc"
+	"github.com/utilitywarehouse/tikv-client-go/rpc"
 )
 
 // For gofail injection.

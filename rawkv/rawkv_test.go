@@ -20,10 +20,10 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/locate"
-	"github.com/tikv/client-go/mockstore/mocktikv"
-	"github.com/tikv/client-go/retry"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/locate"
+	"github.com/utilitywarehouse/tikv-client-go/mockstore/mocktikv"
+	"github.com/utilitywarehouse/tikv-client-go/retry"
 )
 
 func TestT(t *testing.T) {

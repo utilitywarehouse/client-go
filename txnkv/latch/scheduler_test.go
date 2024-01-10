@@ -20,7 +20,7 @@ import (
 	"time"
 
 	. "github.com/pingcap/check"
-	"github.com/tikv/client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/config"
 )
 
 var _ = Suite(&testSchedulerSuite{})

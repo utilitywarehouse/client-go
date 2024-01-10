@@ -22,7 +22,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spaolacci/murmur3"
-	"github.com/tikv/client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/config"
 )
 
 type node struct {

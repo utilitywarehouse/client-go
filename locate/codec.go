@@ -16,7 +16,7 @@ package locate
 import (
 	"context"
 
-	"github.com/tikv/client-go/codec"
+	"github.com/utilitywarehouse/tikv-client-go/codec"
 	pd "github.com/tikv/pd/client"
 )
 

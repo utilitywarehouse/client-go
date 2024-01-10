@@ -20,11 +20,11 @@ import (
 
 	"github.com/pingcap/kvproto/pkg/kvrpcpb"
 	"github.com/pkg/errors"
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/locate"
-	"github.com/tikv/client-go/metrics"
-	"github.com/tikv/client-go/retry"
-	"github.com/tikv/client-go/rpc"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/locate"
+	"github.com/utilitywarehouse/tikv-client-go/metrics"
+	"github.com/utilitywarehouse/tikv-client-go/retry"
+	"github.com/utilitywarehouse/tikv-client-go/rpc"
 	pd "github.com/tikv/pd/client"
 )
 

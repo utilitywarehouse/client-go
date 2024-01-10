@@ -20,8 +20,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/proxy"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/proxy"
 )
 
 type txnkvHandler struct {

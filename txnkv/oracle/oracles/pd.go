@@ -19,9 +19,9 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/metrics"
-	"github.com/tikv/client-go/txnkv/oracle"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/metrics"
+	"github.com/utilitywarehouse/tikv-client-go/txnkv/oracle"
 	pd "github.com/tikv/pd/client"
 )
 

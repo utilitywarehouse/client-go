@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	. "github.com/pingcap/check"
-	"github.com/tikv/client-go/config"
-	"github.com/tikv/client-go/key"
+	"github.com/utilitywarehouse/tikv-client-go/config"
+	"github.com/utilitywarehouse/tikv-client-go/key"
 )
 
 func TestT(t *testing.T) {

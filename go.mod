@@ -14,7 +14,7 @@ require (
 	github.com/pingcap/kvproto v0.0.0-20210219095907-b2375dcc80ad
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.17.0
-	github.com/prometheus/common v0.27.0 // Our change
+	github.com/prometheus/common v0.44.0 // Our change
 	github.com/sirupsen/logrus v1.6.0
 	github.com/spaolacci/murmur3 v1.1.0
 	github.com/tikv/pd v1.1.0-beta.0.20210122094357-c7aac753461a
